@@ -1,7 +1,8 @@
 # FileTimeStamper
 Renames files, replaces a placeholder with timestamp values
 Renames (migration) files contained in path specified in`<argument>` of the `pom.xml` file matching a specified pattern to 
-a timestamp pattern.
+a timestamp pattern. 
+**Make sure `<argument>` in `pom.xml` file matches the path to the files exactly**
 
 ## Acceptable Patterns:
 + V1_x__name_of_migration_file.sql
