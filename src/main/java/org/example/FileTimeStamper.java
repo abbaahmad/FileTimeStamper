@@ -14,7 +14,7 @@ public class FileTimeStamper {
 
         File[] files = dbFolder.listFiles();
         //To play around with the regex expression, use: https://regex101.com/
-        Pattern fileNamePattern = Pattern.compile("([RUV]\\d+_(x)+__[-\\w]+\\.sql)");
+        Pattern fileNamePattern = Pattern.compile("([RUV]\\d+_(?i:x)+__[-\\w]+\\.sql)");
         Matcher regexMatcher;
         if(files == null || files.length == 0) {
             System.out.println("No files found");
